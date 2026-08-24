@@ -2,17 +2,21 @@ import os
 print(os.system("cls"))
 
 print("<============ Program untuk menentukan GANJIL/GENAP ============>")
-while True:
-    x = int(input("Masukkan bilangan yang akan diperiksa: "))
 
-    if x % 2 == 0:
-        print(x, "adalah bilangan genap 🟢")
-    else:
-        print(x, "adalah bilangan ganjil 🔴")
+def ganjil_genap(angka):
+    while True:
+        angka = int(input("Masukkan bilangan yang akan diperiksa: "))
         
-    if input("\nApakah ingin memeriksa bilangan lain? (Y/N):").upper() == "N":
-        print("Terima kasih telah menggunakan program ini.")
-        print("================================================================")
-        break
-    else:
-        continue
+        if angka % 2 == 0:
+            print(angka, "adalah bilangan genap 🟢")
+        else:
+            print(angka, "adalah bilangan ganjil 🔴")
+            
+        if input("\nApakah ingin memeriksa bilangan lain? (Y/N):").upper() == "N":
+            print("Terima kasih telah menggunakan program ini.")
+            print("================================================================")
+            break
+        else:
+            continue
+    
+ganjil_genap(angka=0)
