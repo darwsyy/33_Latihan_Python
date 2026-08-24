@@ -1,3 +1,6 @@
+import os
+print(os.system("cls"))
+
 print("<============ Program untuk menentukan GANJIL/GENAP ============>")
 while True:
     x = int(input("Masukkan bilangan yang akan diperiksa: "))
