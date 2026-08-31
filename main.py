@@ -1,9 +1,10 @@
+import os
 import ModulMatematika as math
 import ModulBangunDatar as bd
-import os
-print(os.system("cls"))
+def clear_screen():
+    os.system("cls")
 
-
+clear_screen()
 
 while True:
     print("<============ SELAMAT DATANG PADA PROGRAM BANGUN DATAR/BILANGAN ============>\n")
