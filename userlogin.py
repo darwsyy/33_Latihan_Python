@@ -1,6 +1,4 @@
 import mysql.connector
-
-# Konfigurasi Koneksi Database
 def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
@@ -9,7 +7,6 @@ def get_db_connection():
         database="app_db"
     )
 
-# Fitur Register (Tambah User Baru)
 def register():
     print("\n--- REGISTRASI USER BARU ---")
     username = input("Masukkan Username Baru: ")
@@ -30,7 +27,6 @@ def register():
         cursor.close()
         conn.close()
 
-# Fitur Login
 def login():
     print("\n--- LOGIN USER ---")
     username = input("Username: ")
@@ -53,7 +49,6 @@ def login():
         print("\nUsername atau password salah!")
         return False
 
-# Menu Utama
 def main():
     while True:
         print("\n=== MENU APLIKASI ===")
@@ -65,7 +60,6 @@ def main():
 
         if pilihan == '1':
             if login():
-                # Jalankan fungsi utama aplikasimu di sini setelah berhasil login
                 print("\n[Aplikasi Utama Berjalan...]")
                 break
         elif pilihan == '2':
