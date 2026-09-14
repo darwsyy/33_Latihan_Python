@@ -72,9 +72,9 @@ def login_user():
         if conn and conn.is_connected():
             conn.close()
 
-# --- HALAMAN UTAMA SETELAH LOGIN ---
+
 def show_main_app_screen(username):
-    # Sembunyikan jendela login
+
     root.withdraw()
 
     # Buat jendela baru untuk aplikasi utama
@@ -89,28 +89,28 @@ def show_main_app_screen(username):
         app_window.destroy()
         entry_username.delete(0, tk.END)
         entry_password.delete(0, tk.END)
-        root.deiconify() # Tampilkan kembali jendela login
+        root.deiconify() 
+        
+    tk.Button(app_window, text="LOGOUT", command=logout, bg="#f53029", fg="white", font=("Arial", 10, "bold")).pack(pady=30)
 
-    tk.Button(app_window, text="Logout", command=logout, bg="#d9534f", fg="white", font=("Arial", 10, "bold")).pack(pady=30)
 
-# --- DESAIN TAMPILAN GUI (TKINTER) ---
 root = tk.Tk()
 root.title("Sistem Autentikasi User")
 root.geometry("350x300")
 root.resizable(False, False)
 
 # Judul Form
-lbl_title = tk.Label(root, text="Autentikasi User", font=("Arial", 14, "bold"))
+lbl_title = tk.Label(root, text="Sistem Autentikasi User", font=("Arial", 14, "bold"))
 lbl_title.pack(pady=15)
 
 # Input Username
-lbl_user = tk.Label(root, text="Username:", font=("Arial", 10))
+lbl_user = tk.Label(root, text="Username :", font=("Arial", 10))
 lbl_user.pack(anchor="w", padx=40)
 entry_username = tk.Entry(root, font=("Arial", 10), width=30)
 entry_username.pack(padx=40, pady=(0, 10))
 
 # Input Password
-lbl_pass = tk.Label(root, text="Password:", font=("Arial", 10))
+lbl_pass = tk.Label(root, text="Password :", font=("Arial", 10))
 lbl_pass.pack(anchor="w", padx=40)
 entry_password = tk.Entry(root, font=("Arial", 10), width=30, show="*")
 entry_password.pack(padx=40, pady=(0, 15))
@@ -119,10 +119,10 @@ entry_password.pack(padx=40, pady=(0, 15))
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=10)
 
-btn_login = tk.Button(btn_frame, text="Login", command=login_user, bg="#4CAF50", fg="white", width=12, font=("Arial", 10, "bold"))
+btn_login = tk.Button(btn_frame, text="Login", command=login_user, bg="#249CAC", fg="white", width=12, font=("Arial", 10, "bold"))
 btn_login.grid(row=0, column=0, padx=5)
 
-btn_register = tk.Button(btn_frame, text="Register", command=register_user, bg="#2196F3", fg="white", width=12, font=("Arial", 10, "bold"))
+btn_register = tk.Button(btn_frame, text="Register", command=register_user, bg="#0D3B7B", fg="white", width=12, font=("Arial", 10, "bold"))
 btn_register.grid(row=0, column=1, padx=5)
 
 # Jalankan Loop GUI
