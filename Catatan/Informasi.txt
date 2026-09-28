@@ -1,0 +1,2 @@
+Halo, ini contoh tulisan ke informasi.txt.
+Baris kedua data.
