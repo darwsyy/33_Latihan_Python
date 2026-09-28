@@ -1,0 +1,27 @@
+[
+    {
+        "npm": 100,
+        "nama": "Ahmad Dani",
+        "jurusan": "TKJ"
+    },
+    {
+        "npm": 101,
+        "nama": "Budi Hermanos",
+        "jurusan": "TKJ"
+    },
+    {
+        "npm": 102,
+        "nama": "Wulan Putri",
+        "jurusan": "TKJ"
+    },
+    {
+        "npm": 103,
+        "nama": "Hima Anea",
+        "jurusan": "TKJ"
+    },
+    {
+        "npm": 104,
+        "nama": "Jhon Wen",
+        "jurusan": "TKJ"
+    }
+]
